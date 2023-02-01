@@ -325,12 +325,7 @@ body {
 /* Responsive Media Query */
 
 @media screen and (max-width: 1024px) {
-  .header {
-    height: 0;
-  }
-  .footer {
-    height: 0;
-  }
+
   .sidebar {
     margin: 0;
     padding: 23px;
