@@ -2,9 +2,24 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap');
-@import url('https://fonts.animaapp.com/ProximaNova-Semibold');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap'); */
+/* @import url('https://fonts.animaapp.com/ProximaNova-Semibold'); */
+
+@font-face {
+  font-family: 'Intro';
+  src: url('/fonts/Intro/Intro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/lato-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/Proxima_Nova/ProximaNova-Regular.ttf') format('truetype');
+}
 
 /* Variables */
 :root {
@@ -325,7 +340,6 @@ body {
 /* Responsive Media Query */
 
 @media screen and (max-width: 1024px) {
-
   .sidebar {
     margin: 0;
     padding: 23px;
@@ -372,10 +386,14 @@ body {
     width: 100%;
   }
   .main-content__full-width-row .main-content__item-footer {
-    top: 0;
+    /* top: 0;
     bottom: 23px;
     left: 0;
+    right: 0; */
+    top: 49%;
+    left: 0;
     right: 0;
+    display: inherit;
   }
   .main-content__full-width-row .main-content__wrap-link h2 {
     font-size: 17px;
@@ -383,16 +401,21 @@ body {
     margin: 10px 0;
   }
 
-  /* .main-content__item-decorator {
-    content: '';
+  .main-content__item-decorator {
+    /* content: '';
     display: block;
-    width: 100%;
+    width: 115%;
     height: 10px;
     border-top: 1px solid #e0e0e0;
     background: #f4f4f4;
     position: absolute;
     bottom: auto;
-    left: 0;
-    right: 0;
-  } */
+    left: -23px;
+    top: -35px; */
+    
+    /* width: 100%; */
+    /* right: 0; */
+    /* left: 0;
+    right: 0; */
+  }
 }
