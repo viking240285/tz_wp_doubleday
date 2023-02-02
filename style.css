@@ -175,6 +175,10 @@ body {
   background: #7fad95;
   padding: 5px 13px;
 }
+.main-content__half-width-row-increase .main-content__item-meta a:hover,
+.main-content__full-width-row .main-content__item-meta a:hover {
+  background: #87e0b2;
+}
 
 .main-content__half-width-row-increase .main-content__item-title,
 .main-content__full-width-row .main-content__item-title {
