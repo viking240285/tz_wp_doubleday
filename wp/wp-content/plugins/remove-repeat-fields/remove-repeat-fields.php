@@ -107,6 +107,16 @@ class RemoveRepeatFields
 
             jQuery(document).ready(function($) {
 
+                var seen = {};
+                $("#remove-repeat-delete-fields-type option").each(function() {
+                    var txt = $(this).val();
+                    if (seen[txt]) {
+                        $(this).remove();
+                    } else {
+                        seen[txt] = true;
+                    }
+                });
+
                 $('#remove-repeat-fields-button').click(function(e) {
                     e.preventDefault();
 
